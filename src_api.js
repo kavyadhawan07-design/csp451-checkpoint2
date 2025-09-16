@@ -9,3 +9,5 @@ app.get('/users/:id', (req, res) => {
 });
 
 app.listen(3000, () => console.log('API running on http://localhost:3000'));
+// Extra endpoint
+app.get('/ping', (req, res) => res.send('pong'));
